@@ -32,11 +32,11 @@
 
 | Field | Your Answer |
 |-------|-------------|
-| **Full Name** | [Write your full name here] |
-| **Student ID** | [Write your student ID here] |
-| **University Email** | [yourid]@std.psau.edu.sa |
-| **GitHub Username** | [your-github-username] |
-| **Repository Link** | [Paste your repository link here] |
+| **Full Name** | [Ghadi bader alshedi] |
+| **Student ID** | [446051748] |
+| **University Email** | [446051748]@std.psau.edu.sa |
+| **GitHub Username** | [Ghadi-bader48] |
+| **Repository Link** | [https://github.com/Ghadi-bader48/OS-Assignment3-Ghadi-Alshedi] |
  
 ---
 
@@ -132,81 +132,83 @@
 
 ## Your Development Log
 
-### Entry 1 - [Date and Time]
-**What I did**:
+### Entry 1 - [November 5, 2026, 10:00 PM]
+**What I did**:I personalized the starter project and made my first GitHub commit
 
-**Details**:
+**Details**:forked the starter repository on GitHub,renamed it,and updated the student ID in SchedulerSimulationSync.java.
 
-**Challenges**:
+**Challenges**:I was confused about how to use GitHub and make my first commit.
 
-**Solution**:
+**Solution**:I learned how to stage my changes,create a commit,and push it to GitHub.
 
-**Time spent**:
-
----
-
-### Entry 2 - [Date and Time]
-**What I did**:
-
-**Details**:
-
-**Challenges**:
-
-**Solution**:
-
-**Time spent**:
+**Time spent**: 30min 
 
 ---
 
-### Entry 3 - [Date and Time]
-**What I did**:
+### Entry 2 - [November 11, 2026, 10:00 P]
+**What I did**:I implemented synchronization features in the Java scheduler.
 
-**Details**:
+**Details**:I used ReentrantLock to protect ReadyQueue and SharedStats.I also added a Semaphore to replace busy waiting.
 
-**Challenges**:
+**Challenges**:I had a NullPointerException when a CPU tried to pick a process from an empty queue.
 
-**Solution**:
+**Solution**:I added a null check after poll() and tested the program again. All four verification checks passed.
 
-**Time spent**:
-
----
-
-### Entry 4 - [Date and Time]
-**What I did**:
-
-**Details**:
-
-**Challenges**:
-
-**Solution**:
-
-**Time spent**:
+**Time spent**: 1 hour
 
 ---
 
-### Entry 5 - [Date and Time]
-**What I did**:
+### Entry 3 - [November 5, 2026, 11:30pm]
+**What I did**:I implemented Feature 1 to protect the ReadyQueue operations.
 
-**Details**:
+**Details**:I added a ReentrantLock to ReadyQueue and used lock(),try, finally,and unlock() in the add(),poll(), processOf(), and snapshot() methods. I committed and pushed my changes to GitHub.
 
-**Challenges**:
+**Challenges**:: I had difficulty placing the closing braces correctly when adding try and finally blocks
 
-**Solution**:
 
-**Time spent**:
+**Solution**:I checked each method carefully and corrected the braces to make sure the lock is always released.
+
+**Time spent**: 45min
 
 ---
 
-### Entry 6 - [Optional - Date and Time]
-**What I did**:
+### Entry 4 - [November 11, 2026 , 3:45]
+**What I did**:I replaced busy waiting with a Semaphore in the CPU scheduler.
 
-**Details**:
+**Details**: I added a counting Semaphore to ReadyQueue and used release() when a process was added.I also used acquire() in CpuWorker so the CPU waits for available work instead of checking the queue repeatedly.
 
-**Challenges**:
+**Challenges**: I needed to make sure the CPU threads could stop correctly when the queue was empty
 
-**Solution**:
+**Solution**:I added a null check after poll() and checked the shutdown behavior.
 
-**Time spent**:
+**Time spent**: 15min
+
+---
+
+### Entry 5 - [November 11, 2026 , 4:00pm]
+**What I did**:I tested the scheduler after completing the synchronization changes
+
+**Details**:I ran the Java program in VS Code and checked the verification table. All four checks passed, including zero busy-waiting polls.
+
+**Challenges**:I needed to confirm that the program completed without errors.
+
+**Solution**: I reviewed the terminal output and confirmed that all shared values were consistent.
+
+**Time spent**:25min
+
+---
+
+### Entry 6 - [November 11, 2026 , 5:00pm]
+**What I did**:: I checked my GitHub commits and started documenting my work
+
+**Details**:I confirmed that my repository contained separate commits for the ReadyQueue lock, SharedStats lock, and Semaphore features. I also filled in my student information and repository link in MY_WORK.md.
+
+
+**Challenges**:I needed to understand where to find my repository link and how to complete the documentation template.
+
+**Solution**: I opened my GitHub repository, copied its link, and added it to the Student Information section
+
+**Time spent**:1 hour
 
 ---
 
